@@ -1,0 +1,17 @@
+meta {
+  name: rename merit
+  type: http
+  seq: 3
+}
+
+patch {
+  url: http://10.16.113.24:8080/api/v1/merit/update/8e6e9e21-86c3-4fe3-80f6-6193649b35b3/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "meritTitle": "8888"
+  }
+}

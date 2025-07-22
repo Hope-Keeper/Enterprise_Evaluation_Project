@@ -1,0 +1,15 @@
+meta {
+  name: get all dimensions of a family
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://10.16.113.24:8080/api/v1/countByDimension/list/?jobFamilyId=1
+  body: none
+  auth: none
+}
+
+params:query {
+  jobFamilyId: 1
+}
