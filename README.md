@@ -6,10 +6,10 @@
 
 ## 📐 Architecture Summary
 
--   ✅ **3-layerd Architecture**
--   ✅ **Asynchronous Communication** using RabbitMQ
--   ✅ **Role-Based Access Control** via Keycloak
--   ✅ **Dockerized Deployment**
+- ✅ **3-layerd Architecture**
+- ✅ **Asynchronous Communication** using RabbitMQ
+- ✅ **Role-Based Access Control** via Keycloak
+- ✅ **Dockerized Deployment**
 
 ---
 
@@ -32,9 +32,9 @@ This example includes one microservice: `user-service`, built using DDD structur
 
 ## 🧩 System Architecture
 
-![System Diagram](Back-end/docs/flow2.png)
-![System Diagram](Back-end/docs/page1.png)
-![System Diagram](Back-end/docs/page2.png)
+![System Diagram](docs/flow2.png)
+![System Diagram](docs/page12.png)
+![System Diagram](docs/page21.png)
 
 ## Getting started
 
@@ -44,8 +44,8 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ## Add your files
 
--   [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
--   [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
+- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
 
 ```
 cd existing_repo
@@ -56,25 +56,25 @@ git push -uf origin main
 
 ## Integrate with your tools
 
--   [ ] [Set up project integrations](https://nsgitlab.paya-local.net/backend/punishment-service/-/settings/integrations)
+- [ ] [Set up project integrations](https://nsgitlab.paya-local.net/backend/punishment-service/-/settings/integrations)
 
 ## Collaborate with your team
 
--   [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
--   [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
--   [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
--   [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
--   [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
+- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
+- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
+- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
+- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
 
 ## Test and Deploy
 
 Use the built-in continuous integration in GitLab.
 
--   [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
--   [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
--   [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
--   [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
--   [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
+- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
+- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
+- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
+- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
 
 ---
 
