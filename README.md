@@ -15,14 +15,25 @@
 
 ## 🔧 Tech Stack
 
-| Layer            | Tech                            |
-| ---------------- | ------------------------------- |
-| Backend          | Java, Sring Boot                |
-| Auth             | Keycloak (OAuth2 / OIDC)        |
-| Database         | MS SQL Server, MongoDB          |
-| Messaging        | Feign ,RabbitMQ                 |
-| Containerization | Docker, Docker Compose          |
-| Monitoring       | Actuator, Prometheus (optional) |
+| Layer            | Tech                       |
+| ---------------- | -------------------------- |
+| Backend          | - Java                     |
+|                  | - Spring Boot              |
+| Auth             | - Keycloak (OAuth2 / OIDC) |
+| Database         | - MS SQL Server            |
+|                  | - MongoDB                  |
+| Messaging        | - Feign                    |
+|                  | - RabbitMQ                 |
+| Containerization | - Docker                   |
+|                  | - Docker Compose           |
+| Monitoring       | - Spring Boot Actuator     |
+|                  | - Prometheus (optional)    |
+| Frontend         | - React                    |
+|                  | - Vite                     |
+|                  | - Redux                    |
+|                  | - TypeScript               |
+|                  | - Material-UI (MUI)        |
+|                  | - ESLint, Prettier         |
 
 ---
 
@@ -32,9 +43,9 @@ This example includes one microservice: `user-service`, built using DDD structur
 
 ## 🧩 System Architecture
 
-![System Diagram](docs/flow2.png)
-![System Diagram](docs/page12.png)
-![System Diagram](docs/page21.png)
+![System Diagram](Back-end/docs/flow2.png)
+![System Diagram](Back-end/docs/page12.png)
+![System Diagram](Back-end/docs/page21.png)
 
 ## Getting started
 
