@@ -1,4 +1,4 @@
-package com.paya.EvaluationService.dto;
+package com.Reihan.EvaluationService.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonSubTypes;

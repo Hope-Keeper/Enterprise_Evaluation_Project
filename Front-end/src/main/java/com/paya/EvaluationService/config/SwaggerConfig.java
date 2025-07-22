@@ -1,4 +1,4 @@
-package com.paya.EvaluationService.config;
+package com.Reihan.EvaluationService.config;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.enums.SecuritySchemeType;

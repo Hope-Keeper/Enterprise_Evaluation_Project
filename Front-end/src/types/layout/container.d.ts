@@ -20,11 +20,6 @@ export interface WithMainContainerStylesPropsType {
     layoutState: ReduxLayoutStateType;
 }
 
-// export interface RouteCreatorPropsType {
-//     validRoles: string[] | null;
-//     path: string;
-//     component: React.ReactElement;
-// }
 export interface RouteCreatorPropsType {
     userHasAccess: boolean;
     path: string;

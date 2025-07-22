@@ -35,7 +35,7 @@ export default function AssessorRolesTable(props: AssessorRolesTablePropsType) {
                 maxHeight: `calc(100vh - 260px - ${layoutState.footerHeight} - ${layoutState.headerHeight})`
             }}>
             <Table stickyHeader sx={{ minWidth: 750 }} size={dense ? "small" : "medium"}>
-                <PayaTableHead />
+                <ReihanTableHead />
                 <TableBody>
                     {rows.map((row, index) => {
                         return (
@@ -93,7 +93,7 @@ const headCells: readonly HeadCell[] = [
     }
 ];
 
-function PayaTableHead() {
+function ReihanTableHead() {
     return (
         <TableHead>
             <TableRow>

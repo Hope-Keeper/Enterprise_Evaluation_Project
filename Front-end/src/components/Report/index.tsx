@@ -178,7 +178,7 @@ const handleSidebarClick = (item: string) => {
 
 const sidebarItems = [
     { name: "سرگرد پاسدار", value: "..." },
-    { name: "خانواده شغلی", value: "..." },
+    { name: "گروه شغلی", value: "..." },
     { name: "جایگاه شغلی", value: "..." },
 
     { name: "سطح ارزشیابی", value: "..." }
@@ -350,8 +350,8 @@ function Report() {
                         </Typography>
                         <Typography sx={{ fontSize: "14px", fontWeight: "700" }} align="center">
                             برا اساس جمع بندی داده های مندرج در کاربرگ های ارزشیابی ، وضعیت جنابعالی
-                            طی سال 1402 به تفکیک ابعاد و مولفه های مرتبط با خانواده مأموریتی به شرح
-                            زیر اعلام میگردد.
+                            طی سال 1402 به تفکیک ابعاد و مولفه های مرتبط با گروه مأموریتی به شرح زیر
+                            اعلام میگردد.
                         </Typography>
                     </Grid>
                     <Grid item xs={12}></Grid>

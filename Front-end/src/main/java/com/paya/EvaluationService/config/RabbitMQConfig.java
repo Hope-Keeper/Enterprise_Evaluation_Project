@@ -1,8 +1,8 @@
-package com.paya.EvaluationService.config;
+package com.Reihan.EvaluationService.config;
 
 
-import com.paya.EvaluationService.entity.TblQueue;
-import com.paya.EvaluationService.repository.QueueRepository;
+import com.Reihan.EvaluationService.entity.TblQueue;
+import com.Reihan.EvaluationService.repository.QueueRepository;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;

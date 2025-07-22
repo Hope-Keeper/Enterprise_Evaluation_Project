@@ -1,12 +1,12 @@
-package com.paya.EvaluationService.config;
+package com.Reihan.EvaluationService.config;
 
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.paya.EvaluationService.entity.TblQueue;
-import com.paya.EvaluationService.repository.QueueRepository;
-import com.paya.EvaluationService.dto.PersonnelDTO;
-import com.paya.EvaluationService.dto.PersonnelResponseDTO;
+import com.Reihan.EvaluationService.entity.TblQueue;
+import com.Reihan.EvaluationService.repository.QueueRepository;
+import com.Reihan.EvaluationService.dto.PersonnelDTO;
+import com.Reihan.EvaluationService.dto.PersonnelResponseDTO;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageBuilder;

@@ -1,4 +1,4 @@
-package com.paya.EvaluationService.entity;
+package com.Reihan.EvaluationService.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package com.paya.EvaluationService.exception;
+package com.Reihan.EvaluationService.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

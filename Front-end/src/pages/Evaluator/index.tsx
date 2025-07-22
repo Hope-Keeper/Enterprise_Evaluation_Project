@@ -12,7 +12,7 @@ import { useSelector } from "react-redux";
 import { RootState } from "store";
 import { Option } from "types/components/autoCompleteHighlight";
 import EvaluatorTable from "./Table";
-import PayaNoData from "components/PayaNoData";
+import ReihanNoData from "components/ReihanNoData";
 
 function Evaluator() {
     const [evaluatorList, setEvaluatorList] = useState<SimpleEvaluatedType[] | null>(null);
@@ -70,7 +70,7 @@ function Evaluator() {
                 ) : program ? (
                     <Program program={program} />
                 ) : (
-                    <PayaNoData color="success" text="دوره جاری وجود ندارد..." />
+                    <ReihanNoData color="success" text="دوره جاری وجود ندارد..." />
                 )}
             </Grid>
             {/**table */}
@@ -88,12 +88,3 @@ function Evaluator() {
 }
 
 export default Evaluator;
-// [
-//     {
-//         personnelId: "string",
-//         personnelFirstName: "string",
-//         personnelLastName: "string",
-//         evaluationProgramResulStatus: 1,
-//         evaluationProgramResulEvaluatedPersonnelRole: "string"
-//     }
-// ]

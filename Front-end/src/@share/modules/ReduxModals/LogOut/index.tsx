@@ -1,5 +1,5 @@
-import PayaDialog from "components/PayaDialog";
-import PayaLogOutModal from "components/PayaLogOutModal";
+import ReihanDialog from "components/ReihanDialog";
+import ReihanLogOutModal from "components/ReihanLogOutModal";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "store";
 import { closeLogOutModal } from "store/ReduxModalsStore/LogOutModal";
@@ -13,14 +13,14 @@ function LogOutModalDialog() {
 
     if (!isOpen) return null;
     return (
-        <PayaDialog
+        <ReihanDialog
             maxWidth="sm"
             open={isOpen}
             handleClose={() => {
                 dispatch(closeLogOutModal());
             }}
             title="خروج از حساب کاربری"
-            DialogContents={<PayaLogOutModal />}
+            DialogContents={<ReihanLogOutModal />}
             dangerous
             imageSrc={logout}
             bgImageOpacity={0.4}

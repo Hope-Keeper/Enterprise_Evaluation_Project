@@ -66,7 +66,7 @@ function RouteManager() {
                 component: <KeycloackLoginPage />
             })}
 
-            {/**مدیر ارزشیابی =  4 */}
+            {/**مدیر  =  4 */}
             {routeCreator({
                 userHasAccess: currentUserRole === "evaluation_manager",
                 path: "/family",
@@ -135,12 +135,6 @@ function RouteManager() {
 
             {routeCreator({
                 userHasAccess: currentUserRole === "evaluation_manager",
-                path: "/unit-evaluation",
-                component: <UnitEvaluation />
-            })}
-
-            {routeCreator({
-                userHasAccess: currentUserRole === "evaluation_manager",
                 path: "/staff-evaluation",
                 component: <StaffEvaluation />
             })}
@@ -161,76 +155,6 @@ function RouteManager() {
                 userHasAccess: currentUserRole === "evaluation_manager",
                 path: "confirm-unrated-staff",
                 component: <ConfirmUnratedStaff />
-            })}
-
-            {/**مدیر یگان /کمیسیون = 3 */}
-            {routeCreator({
-                userHasAccess: currentUserRole === "commission",
-                path: "/commission",
-                component: <Commission />
-            })}
-
-            {routeCreator({
-                userHasAccess: currentUserRole === "commission",
-                path: "/commission-summery",
-                component: <CommissionSummery />
-            })}
-
-            {/**مدیر سلامت = 1  */}
-            {routeCreator({
-                userHasAccess: currentUserRole === "health_manager",
-                path: "/health-evaluation",
-                component: <HealthEvaluation />
-            })}
-
-            {/**ارزیاب =  5  */}
-            {routeCreator({
-                userHasAccess: currentUserRole === "evaluator",
-                //evaluator
-                path: "/evaluator",
-                component: <Evaluator />
-            })}
-
-            {routeCreator({
-                //evaluator
-                userHasAccess: currentUserRole === "evaluator",
-
-                path: "/evaluator-questions",
-                component: <EvaluatorQuestions />
-            })}
-
-            {/**کاربر = 0 */}
-            {routeCreator({
-                userHasAccess: currentUserRole === "personnel",
-
-                path: "/user",
-                component: <UserPanel />
-            })}
-
-            {routeCreator({
-                userHasAccess: currentUserRole === "personnel",
-
-                path: "/user/user-diagram",
-                component: <UserPanelDiagram />
-            })}
-
-            {/**مدیر اجرایی =2  */}
-
-            {routeCreator({
-                userHasAccess: currentUserRole === "executive_manager",
-
-                path: "/executive-director",
-                component: <ExecutiveDirector />
-            })}
-
-            {routeCreator({
-                userHasAccess:
-                    currentUserRole === "evaluation_manager" ||
-                    currentUserRole === "health_manager" ||
-                    currentUserRole === "commission" ||
-                    currentUserRole === "executive_manager",
-                path: "/evaluation-records",
-                component: <UnitEvaluationRecords />
             })}
 
             <Route path="*" element={<h1>404</h1>} />

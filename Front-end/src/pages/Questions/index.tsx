@@ -11,7 +11,7 @@ import { CopyIcon, DeleteFileIcon } from "@share/icons";
 import { AxiosErrorPersonalized } from "api";
 import { editActivationOfQuestionById, getAllQuestionsOfMeritById } from "api/Questions";
 import { AxiosResponse } from "axios";
-import PayaTooltip from "components/PayaTooltip";
+import ReihanTooltip from "components/ReihanTooltip";
 import { enqueueSnackbar } from "notistack";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
@@ -23,7 +23,7 @@ import { QuestionSummeryType } from "types/api";
 import { Option } from "types/components/autoCompleteHighlight";
 import QuestionsForm from "./Form";
 import QuestionsTable from "./Table";
-import PayaNoData from "components/PayaNoData";
+import ReihanNoData from "components/ReihanNoData";
 
 ///import { useParams } from "react-router";
 
@@ -355,7 +355,7 @@ function QuestionsPage() {
                             handleCopy={handleCopyQuestions}
                         />
                     ) : (
-                        <PayaNoData bgImage={true} />
+                        <ReihanNoData bgImage={true} />
                     )}
                 </Grid>
 
@@ -372,7 +372,7 @@ function QuestionsPage() {
                         }}>
                         <Grid item xs={12} container className="d-f-j-b-a-c">
                             <Grid item xs={12} className="d-f-j-c-a-c  gap-8">
-                                <PayaTooltip title="کپی" placement="top">
+                                <ReihanTooltip title="کپی" placement="top">
                                     <Button
                                         size="medium"
                                         onClick={() => {
@@ -382,9 +382,9 @@ function QuestionsPage() {
                                         sx={{ width: "40px", height: "40px" }}>
                                         <CopyIcon sx={{ width: "20px", height: "20px" }} />
                                     </Button>
-                                </PayaTooltip>
+                                </ReihanTooltip>
 
-                                <PayaTooltip title="حذف" placement="top">
+                                <ReihanTooltip title="حذف" placement="top">
                                     <Button
                                         size="medium"
                                         onClick={() => {
@@ -395,7 +395,7 @@ function QuestionsPage() {
                                         sx={{ width: "40px", height: "40px" }}>
                                         <DeleteFileIcon sx={{ width: "20px", height: "20px" }} />
                                     </Button>
-                                </PayaTooltip>
+                                </ReihanTooltip>
                             </Grid>
                         </Grid>
                     </Box>

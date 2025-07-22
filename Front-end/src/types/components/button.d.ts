@@ -7,7 +7,7 @@ export interface OutlineButtonPropsType {
     onClick: () => void;
 }
 
-export interface PayaButtonWithIconPropsType {
+export interface ReihanButtonWithIconPropsType {
     label?: string;
     color?: string;
     variant?: "outlined" | "text" | "contained";

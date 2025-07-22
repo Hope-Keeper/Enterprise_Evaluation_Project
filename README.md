@@ -40,8 +40,10 @@ This example includes one microservice: `user-service`, built using DDD structur
 ## 🧩 System Architecture
 
 ![System Diagram](Back-end/docs/flow2.png)
-![System Diagram](Back-end/docs/page12.png)
-![System Diagram](Back-end/docs/page21.png)
+![System Diagram](Back-end/docs/questions.png)
+![System Diagram](Back-end/docs/questionstoroles.png)
+![System Diagram](Back-end/docs/creation.png)
+![System Diagram](Back-end/docs/bar.png)
 
 ## Getting started
 
@@ -56,14 +58,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://nsgitlab.paya-local.net/backend/punishment-service.git
+git remote add origin https://nsgitlab.Reihan-local.net/backend/punishment-service.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://nsgitlab.paya-local.net/backend/punishment-service/-/settings/integrations)
+- [ ] [Set up project integrations](https://nsgitlab.Reihan-local.net/backend/punishment-service/-/settings/integrations)
 
 ## Collaborate with your team
 

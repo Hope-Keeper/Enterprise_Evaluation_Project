@@ -1,4 +1,4 @@
-package com.paya.EvaluationService.config;
+package com.Reihan.EvaluationService.config;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;

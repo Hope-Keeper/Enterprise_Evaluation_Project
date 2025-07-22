@@ -8,7 +8,7 @@ import { enqueueSnackbar } from "notistack";
 import { SyntheticEvent, useEffect, useState } from "react";
 
 import { AxiosErrorPersonalized } from "api";
-import PayaAutocompleteHighlight from "components/PayaAutocompleteHighlight";
+import ReihanAutocompleteHighlight from "components/ReihanAutocompleteHighlight";
 import { Option } from "types/components/autoCompleteHighlight";
 import EvaluationColumnDiagram from "./ColumnChart";
 import EvaluationLinearDiagram from "./LineChart";
@@ -52,7 +52,7 @@ function UserPanelDiagram() {
                 </Grid>
 
                 <Grid item xs={4}>
-                    <PayaAutocompleteHighlight
+                    <ReihanAutocompleteHighlight
                         disableClearable
                         fullWidth
                         label="نوع نمودار"

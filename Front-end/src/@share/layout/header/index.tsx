@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import { AccountCircleIcon, ArrowKeyboardDownIcon, MarkEmailIcon } from "@share/icons";
 import SvgIcon from "@mui/icons-material/ExpandLess";
-import PayaSearchBar from "components/PayaSearchBar";
+import ReihanSearchBar from "components/ReihanSearchBar";
 import IconButton from "@mui/material/IconButton";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "store";
@@ -51,7 +51,7 @@ function Header() {
                     <ExpandLess fontSize="small" />
                 )}
             </IconButton>
-            <PayaSearchBar
+            <ReihanSearchBar
                 sx={{
                     maxWidth: "400px",
                     ":focus": {

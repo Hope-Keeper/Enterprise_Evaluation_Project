@@ -4,32 +4,32 @@ import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { AccountCircleIcon, KhorsandSazIcon } from "@share/icons";
-import PayaAccordion from "components/PayaAccordion";
-import PayaAlert from "components/PayaAlert";
-import PayaAutocompleteHighlight from "components/PayaAutocompleteHighlight";
-import PayaBreadCrumbs from "components/PayaBreadCrumbs";
-import PayaOnHoverChangeIconButton from "components/PayaButtonOnHoverChangeIcon";
-import PayaDatePicker from "components/PayaDatePicker";
-import PayaDateTimePicker from "components/PayaDateTimePicker";
-import PayaDebouncedTextField from "components/PayaDebouncedTextField";
-import PayaDialog from "components/PayaDialog";
-import PayaEngNumberTextField from "components/PayaEngNumberTextField";
-import PayaFormik from "components/PayaFormik";
-import PayaInfiniteScroll from "components/PayaInfiniteScroll";
-import PayaInfiniteScrollTable from "components/PayaInfiniteScrollTable";
-import PayaLoadingButton from "components/PayaLoadingButton";
-import PayaMultiSelectAutocompleteHighlight from "components/PayaMultiSelectAutocompleteHighlight";
-import PayaPopover from "components/PayaPopover";
-import PayaSnackBar from "components/PayaSnackBar";
-import PayaStepper from "components/PayaStepper";
-import PayaSwitchButton from "components/PayaSwitchButton";
-import PayaTab from "components/PayaTab";
-import PayaTable from "components/PayaTable";
-import PayaTimeLine from "components/PayaTimeLine";
-import PayaTimePicker from "components/PayaTimePicker";
-import PayaToggleButton from "components/PayaToggleButton";
-import PayaTooltip from "components/PayaTooltip";
-import PayaTypography from "components/PayaTypography";
+import ReihanAccordion from "components/ReihanAccordion";
+import ReihanAlert from "components/ReihanAlert";
+import ReihanAutocompleteHighlight from "components/ReihanAutocompleteHighlight";
+import ReihanBreadCrumbs from "components/ReihanBreadCrumbs";
+import ReihanOnHoverChangeIconButton from "components/ReihanButtonOnHoverChangeIcon";
+import ReihanDatePicker from "components/ReihanDatePicker";
+import ReihanDateTimePicker from "components/ReihanDateTimePicker";
+import ReihanDebouncedTextField from "components/ReihanDebouncedTextField";
+import ReihanDialog from "components/ReihanDialog";
+import ReihanEngNumberTextField from "components/ReihanEngNumberTextField";
+import ReihanFormik from "components/ReihanFormik";
+import ReihanInfiniteScroll from "components/ReihanInfiniteScroll";
+import ReihanInfiniteScrollTable from "components/ReihanInfiniteScrollTable";
+import ReihanLoadingButton from "components/ReihanLoadingButton";
+import ReihanMultiSelectAutocompleteHighlight from "components/ReihanMultiSelectAutocompleteHighlight";
+import ReihanPopover from "components/ReihanPopover";
+import ReihanSnackBar from "components/ReihanSnackBar";
+import ReihanStepper from "components/ReihanStepper";
+import ReihanSwitchButton from "components/ReihanSwitchButton";
+import ReihanTab from "components/ReihanTab";
+import ReihanTable from "components/ReihanTable";
+import ReihanTimeLine from "components/ReihanTimeLine";
+import ReihanTimePicker from "components/ReihanTimePicker";
+import ReihanToggleButton from "components/ToggleButton";
+import ReihanTooltip from "components/ReihanTooltip";
+import ReihanTypography from "components/ReihanTypography";
 import { ChangeEvent, MouseEvent, SyntheticEvent, useState } from "react";
 import { Option } from "types/components/autoCompleteHighlight";
 
@@ -97,7 +97,7 @@ function Components() {
                         <b>autocomplete highlighted text</b>
                     </Typography>
                     <br />
-                    <PayaAutocompleteHighlight
+                    <ReihanAutocompleteHighlight
                         loading
                         label="انتخاب کنید"
                         getOptionLabel={(option: Option): string => option.title}
@@ -112,7 +112,7 @@ function Components() {
                         <b>multi select autocomplete</b>
                     </Typography>
                     <br />
-                    <PayaMultiSelectAutocompleteHighlight options={options} label="انتخاب کنید" />
+                    <ReihanMultiSelectAutocompleteHighlight options={options} label="انتخاب کنید" />
                 </Card>
             </Grid>
 
@@ -122,7 +122,7 @@ function Components() {
                         <b>Debounced TextField</b>
                     </Typography>
                     <br />
-                    <PayaDebouncedTextField label="متن مورد جستجو" />
+                    <ReihanDebouncedTextField label="متن مورد جستجو" />
                 </Card>
             </Grid>
 
@@ -132,7 +132,7 @@ function Components() {
                         <b>English Number TextField</b>
                     </Typography>
                     <br />
-                    <PayaEngNumberTextField
+                    <ReihanEngNumberTextField
                         label="فقط اعداد انگلیسی"
                         inputValue={englishNumbersInputValue}
                         setInputValue={setEnglishNumbersInputValue}
@@ -146,7 +146,7 @@ function Components() {
                         <b>Date picker</b>
                     </Typography>
                     <br />
-                    <PayaDatePicker
+                    <ReihanDatePicker
                         label="تاریخ"
                         value={date}
                         onChange={(newDate: null | Date) => {
@@ -162,7 +162,7 @@ function Components() {
                         <b>Time picker</b>
                     </Typography>
                     <br />
-                    <PayaTimePicker label="زمان" value={time} onChange={handleChangeTime} />
+                    <ReihanTimePicker label="زمان" value={time} onChange={handleChangeTime} />
                 </Card>
             </Grid>
 
@@ -172,7 +172,7 @@ function Components() {
                         <b>Date Time picker</b>
                     </Typography>
                     <br />
-                    <PayaDateTimePicker
+                    <ReihanDateTimePicker
                         label="تاریخ و زمان"
                         value={dateTime}
                         onChange={handleChangeDateTime}
@@ -186,7 +186,7 @@ function Components() {
                         <b>Toggle Button</b>
                     </Typography>
                     <br />
-                    <PayaToggleButton
+                    <ReihanToggleButton
                         color="primary"
                         exclusive
                         value={valueToggleButton}
@@ -201,7 +201,7 @@ function Components() {
                         <b>Switch Button</b>
                     </Typography>
                     <br />
-                    <PayaSwitchButton
+                    <ReihanSwitchButton
                         checked={checkedSwitch}
                         onChange={handleChangeSwitch}
                         color="primary"
@@ -215,9 +215,9 @@ function Components() {
                         <b>Loading Button</b>
                     </Typography>
                     <br />
-                    <PayaLoadingButton variant="outlined" loading={loading} onClick={handleClick}>
+                    <ReihanLoadingButton variant="outlined" loading={loading} onClick={handleClick}>
                         Loading Button
-                    </PayaLoadingButton>
+                    </ReihanLoadingButton>
                 </Card>
             </Grid>
 
@@ -227,7 +227,7 @@ function Components() {
                         <b>Button With Icon</b>
                     </Typography>
                     <br />
-                    <PayaOnHoverChangeIconButton
+                    <ReihanOnHoverChangeIconButton
                         label="هاور کنید"
                         variant="contained"
                         defaultIcon={<AccountCircleIcon />}
@@ -244,10 +244,10 @@ function Components() {
                         <b>Tooltip</b>
                     </Typography>
                     <br />
-                    <PayaTooltip
+                    <ReihanTooltip
                         title="پایا"
                         placement="top"
-                        children={<Button>PayaTooltip</Button>}
+                        children={<Button>ReihanTooltip</Button>}
                     />
                 </Card>
             </Grid>
@@ -258,7 +258,7 @@ function Components() {
                         <b>Tabs</b>
                     </Typography>
                     <br />
-                    <PayaTab value={valueTab} onChange={handleChangeTab} tabs={[]} />
+                    <ReihanTab value={valueTab} onChange={handleChangeTab} tabs={[]} />
                 </Card>
             </Grid>
 
@@ -268,7 +268,7 @@ function Components() {
                         <b>BreadCrumbs</b>
                     </Typography>
                     <br />
-                    <PayaBreadCrumbs
+                    <ReihanBreadCrumbs
                         links={[
                             {
                                 id: 1,
@@ -292,16 +292,16 @@ function Components() {
                         <b>Typography</b>
                     </Typography>
                     <br />
-                    <PayaTypography variant="h1">h1</PayaTypography>
-                    <PayaTypography variant="h2">h2</PayaTypography>
-                    <PayaTypography variant="h3">h3</PayaTypography>
-                    <PayaTypography variant="h4">h4</PayaTypography>
-                    <PayaTypography variant="h5">h5</PayaTypography>
-                    <PayaTypography variant="body1">body1</PayaTypography>
-                    <PayaTypography variant="body2">body2</PayaTypography>
-                    <PayaTypography variant="button">button</PayaTypography>
+                    <ReihanTypography variant="h1">h1</ReihanTypography>
+                    <ReihanTypography variant="h2">h2</ReihanTypography>
+                    <ReihanTypography variant="h3">h3</ReihanTypography>
+                    <ReihanTypography variant="h4">h4</ReihanTypography>
+                    <ReihanTypography variant="h5">h5</ReihanTypography>
+                    <ReihanTypography variant="body1">body1</ReihanTypography>
+                    <ReihanTypography variant="body2">body2</ReihanTypography>
+                    <ReihanTypography variant="button">button</ReihanTypography>
                     <br />
-                    <PayaTypography variant="caption">caption</PayaTypography>
+                    <ReihanTypography variant="caption">caption</ReihanTypography>
                 </Card>
             </Grid>
 
@@ -311,7 +311,7 @@ function Components() {
                         <b>Formik</b>
                     </Typography>
                     <br />
-                    <PayaFormik
+                    <ReihanFormik
                         initialValues={{
                             email: "",
                             password: "",
@@ -338,7 +338,7 @@ function Components() {
                     <Button variant="contained" onClick={() => setIsOpenDialog(true)}>
                         open dialog
                     </Button>
-                    <PayaDialog
+                    <ReihanDialog
                         open={isOpenDialog}
                         handleClose={() => {
                             setIsOpenDialog(false);
@@ -361,7 +361,7 @@ function Components() {
                         sx={{ borderRadius: "8px !important" }}>
                         open popover
                     </Button>
-                    <PayaPopover
+                    <ReihanPopover
                         anchor={anchorPopover}
                         message="This is popover"
                         handleClose={handleClosePopover}
@@ -375,7 +375,7 @@ function Components() {
                         <b>SnackBar</b>
                     </Typography>
                     <br />
-                    <PayaSnackBar
+                    <ReihanSnackBar
                         message="این یک اسنک بار است"
                         autoHideDuration={4000}
                         variant={"error"}
@@ -389,20 +389,24 @@ function Components() {
                         <b>Alert</b>
                     </Typography>
                     <br />
-                    <PayaAlert
+                    <ReihanAlert
                         title="موفق"
                         severity="success"
                         message="این یک آلرت با تیتر است"
                         handleClose={() => {}}
                     />
-                    <PayaAlert
+                    <ReihanAlert
                         variant="filled"
                         severity="warning"
                         message="این یک آلرت filled است"
                         handleClose={() => {}}
                     />
-                    <PayaAlert severity="info" message="این یک آلرت است" handleClose={() => {}} />
-                    <PayaAlert severity="error" message="این یک آلرت است" handleClose={() => {}} />
+                    <ReihanAlert severity="info" message="این یک آلرت است" handleClose={() => {}} />
+                    <ReihanAlert
+                        severity="error"
+                        message="این یک آلرت است"
+                        handleClose={() => {}}
+                    />
                 </Card>
             </Grid>
 
@@ -415,7 +419,7 @@ function Components() {
                     <Typography variant="overline" fontSize="18px">
                         <b>infinitescroll</b>
                     </Typography>
-                    <PayaInfiniteScroll />
+                    <ReihanInfiniteScroll />
                 </Card>
             </Grid>
 
@@ -425,7 +429,7 @@ function Components() {
                         <b>Accordion</b>
                     </Typography>
                     <br />
-                    <PayaAccordion
+                    <ReihanAccordion
                         title="مورد"
                         children={
                             <Typography variant="body2">
@@ -446,7 +450,7 @@ function Components() {
                         <b>TimeLine</b>
                     </Typography>
                     <br />
-                    <PayaTimeLine position="alternate" />
+                    <ReihanTimeLine position="alternate" />
                 </Card>
             </Grid>
 
@@ -456,7 +460,7 @@ function Components() {
                         <b>Stepper</b>
                     </Typography>
                     <br />
-                    <PayaStepper steps={[]} />
+                    <ReihanStepper steps={[]} />
                 </Card>
             </Grid>
 
@@ -466,7 +470,7 @@ function Components() {
                         <b>Table</b>
                     </Typography>
                     <br />
-                    <PayaTable />
+                    <ReihanTable />
                 </Card>
             </Grid>
 
@@ -476,7 +480,7 @@ function Components() {
                         <b>Infinite Scroll Table</b>
                     </Typography>
                     <br />
-                    <PayaInfiniteScrollTable />
+                    <ReihanInfiniteScrollTable />
                 </Card>
             </Grid>
         </Grid>

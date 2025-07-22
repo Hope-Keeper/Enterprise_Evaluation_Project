@@ -4,7 +4,7 @@ import { PersonsIcon } from "@share/icons";
 import { AxiosErrorPersonalized } from "api";
 import { createNewRole, editRoleById, RoleType } from "api/Role";
 import { AxiosResponse } from "axios";
-import PayaLoadingButton from "components/PayaLoadingButton";
+import ReihanLoadingButton from "components/ReihanLoadingButton";
 import { Form, Formik, FormikState } from "formik";
 import { enqueueSnackbar } from "notistack";
 import { ChangeEvent, Dispatch, SetStateAction, useEffect, useState } from "react";
@@ -177,16 +177,16 @@ function AssessorRolesForm(props: AssessorRolesFormikPropsType) {
 
                                 <Grid item xs={12} sm={4} md={2} className="d-f-j-e-a-s">
                                     {editThisRow ? (
-                                        <PayaLoadingButton
+                                        <ReihanLoadingButton
                                             size="medium"
                                             color="primary"
                                             variant="contained"
                                             type="submit"
                                             loading={isLoadingForEditingRole}>
                                             ثبت ویرایش
-                                        </PayaLoadingButton>
+                                        </ReihanLoadingButton>
                                     ) : (
-                                        <PayaLoadingButton
+                                        <ReihanLoadingButton
                                             size="medium"
                                             endIcon={<PersonsIcon />}
                                             color="primary"
@@ -194,7 +194,7 @@ function AssessorRolesForm(props: AssessorRolesFormikPropsType) {
                                             type="submit"
                                             loading={isLoadingForCreatingRole}>
                                             ثبت نقش
-                                        </PayaLoadingButton>
+                                        </ReihanLoadingButton>
                                     )}
                                 </Grid>
                             </Grid>

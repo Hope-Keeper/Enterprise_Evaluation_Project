@@ -1,4 +1,4 @@
-package com.paya.EvaluationService.controller;
+package com.Reihan.EvaluationService.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;

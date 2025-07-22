@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import { ExpandIcon } from "@share/icons";
 import LogoImg from "assets/images/logo.png";
-import PayaAsideNestedLinksList from "components/PayaAsideNestedLinksList";
+import ReihanAsideNestedLinksList from "components/ReihanAsideNestedLinksList";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { RootState } from "store";
@@ -80,7 +80,7 @@ function Aside() {
             </Box>
 
             <div className="links-container">
-                <PayaAsideNestedLinksList links={asideLinksList} />
+                <ReihanAsideNestedLinksList links={asideLinksList} />
             </div>
             <div className="logout-btn-container d-f-j-c-a-c">
                 <Button

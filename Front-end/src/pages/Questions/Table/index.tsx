@@ -66,7 +66,7 @@ export default function QuestionsTable(props: QuestionsTablePropsType) {
                 overflow: "auto"
             }}>
             <Table stickyHeader sx={{ minWidth: 750 }} size={dense ? "small" : "medium"}>
-                <PayaTableHead
+                <ReihanTableHead
                     numSelected={selected.length}
                     onSelectAllClick={handleSelectAllClick}
                     rowCount={rows.length}
@@ -128,7 +128,7 @@ const headCells: readonly HeadCell[] = [
     }
 ];
 
-function PayaTableHead(props: PayaTableProps) {
+function ReihanTableHead(props: ReihanTableProps) {
     const { onSelectAllClick, numSelected, rowCount } = props;
 
     return (
@@ -158,7 +158,7 @@ function PayaTableHead(props: PayaTableProps) {
     );
 }
 
-interface PayaTableProps {
+interface ReihanTableProps {
     numSelected: number;
     onSelectAllClick: (event: React.ChangeEvent<HTMLInputElement>) => void;
     rowCount: number;

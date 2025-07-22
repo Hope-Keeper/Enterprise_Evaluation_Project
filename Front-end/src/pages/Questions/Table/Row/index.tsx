@@ -4,8 +4,8 @@ import TableCell from "@mui/material/TableCell";
 import TableRow from "@mui/material/TableRow";
 import { CopyIcon, FileExcelIcon, PenIcon } from "@share/icons";
 import { BpCheckbox } from "components/CheckBox";
-import PayaSwitchButton from "components/PayaSwitchButton";
-import PayaTooltip from "components/PayaTooltip";
+import ReihanSwitchButton from "components/ReihanSwitchButton";
+import ReihanTooltip from "components/ReihanTooltip";
 import * as React from "react";
 import { Dispatch, SetStateAction } from "react";
 import { QuestionSummeryType } from "types/api";
@@ -69,7 +69,7 @@ function QuestionTableRow(props: QuestionTableRowPropsType) {
                     onClick={(e) => {
                         e.stopPropagation();
                     }}>
-                    <PayaSwitchButton
+                    <ReihanSwitchButton
                         disabled={!!editThisRow?.questionId}
                         checked={row.questionIsActive}
                         loading={isLoadingForActivation}
@@ -86,7 +86,7 @@ function QuestionTableRow(props: QuestionTableRowPropsType) {
             </TableCell>
             <TableCell align="center">
                 <Box className="d-f-j-c-a-c gap-16" sx={{ p: 0.5 }}>
-                    <PayaTooltip title="کپی" placement="top">
+                    <ReihanTooltip title="کپی" placement="top">
                         <span>
                             <IconButton
                                 disabled={!!editThisRow?.questionId}
@@ -98,8 +98,8 @@ function QuestionTableRow(props: QuestionTableRowPropsType) {
                                 <CopyIcon />
                             </IconButton>
                         </span>
-                    </PayaTooltip>
-                    <PayaTooltip title="ویرایش" placement="top">
+                    </ReihanTooltip>
+                    <ReihanTooltip title="ویرایش" placement="top">
                         <span>
                             <IconButton
                                 disabled={!!editThisRow?.questionId}
@@ -110,8 +110,8 @@ function QuestionTableRow(props: QuestionTableRowPropsType) {
                                 <PenIcon />
                             </IconButton>
                         </span>
-                    </PayaTooltip>
-                    <PayaTooltip title="حذف" placement="top">
+                    </ReihanTooltip>
+                    <ReihanTooltip title="حذف" placement="top">
                         <span>
                             <IconButton
                                 disabled={!!editThisRow?.questionId}
@@ -122,7 +122,7 @@ function QuestionTableRow(props: QuestionTableRowPropsType) {
                                 <FileExcelIcon />
                             </IconButton>
                         </span>
-                    </PayaTooltip>
+                    </ReihanTooltip>
                 </Box>
             </TableCell>
         </TableRow>

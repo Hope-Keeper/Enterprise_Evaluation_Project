@@ -10,7 +10,7 @@ import TableRow from "@mui/material/TableRow";
 import insecurePersonImage from "@share/Images/insecurePerson.png";
 import { SimpleEvaluatedType } from "api/Evaluator";
 import { NoRecognitionStaffType } from "api/Staff";
-import PayaDialog from "components/PayaDialog";
+import ReihanDialog from "components/ReihanDialog";
 import NoRecognitionModal from "pages/EvaluationQuestions/Dialog/NoRecognitionModal";
 import { useState } from "react";
 import { useSelector } from "react-redux";
@@ -40,8 +40,7 @@ export default function EvaluatorTable(props: EvaluatorTablePropsType) {
         } else if (status === 2 || status === "ارزیابی شده") {
             lable = "ارزیابی شده";
             color = "success";
-        } else if (status === 3 || status === "در انتظار کمیسیون") {
-            lable = "در انتظار کمیسیون";
+        } else if (status === 3 || status === "در انتظار ") {
             color = "info";
         } else if (status === 4 || status === "ارجاع به ارزیاب دیگر") {
             lable = "ارجاع به ارزیاب دیگر";
@@ -86,7 +85,7 @@ export default function EvaluatorTable(props: EvaluatorTablePropsType) {
                     overflow: "auto"
                 }}>
                 <Table stickyHeader sx={{ minWidth: 750 }} size={dense ? "small" : "medium"}>
-                    <PayaTableHead />
+                    <ReihanTableHead />
                     <TableBody>
                         {rows?.map((row, index) => {
                             const { personnel, role, status } = row;
@@ -155,7 +154,7 @@ export default function EvaluatorTable(props: EvaluatorTablePropsType) {
                     </TableBody>
                 </Table>
             </TableContainer>
-            <PayaDialog
+            <ReihanDialog
                 maxWidth="sm"
                 handleClose={() => {
                     setIsOpenModal(false);
@@ -211,7 +210,7 @@ const headCells: readonly HeadCell[] = [
     }
 ];
 
-function PayaTableHead() {
+function ReihanTableHead() {
     return (
         <TableHead>
             <TableRow>

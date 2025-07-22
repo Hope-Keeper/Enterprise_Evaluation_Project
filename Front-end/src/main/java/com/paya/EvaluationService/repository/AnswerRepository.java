@@ -1,4 +1,4 @@
-package com.paya.EvaluationService.repository;
+package com.Reihan.EvaluationService.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 

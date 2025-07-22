@@ -1,4 +1,4 @@
-package com.paya.EvaluationService.response;
+package com.Reihan.EvaluationService.response;
 
 import lombok.Getter;
 import lombok.Setter;

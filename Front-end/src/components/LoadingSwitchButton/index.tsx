@@ -30,7 +30,7 @@ const Android12Switch = styled(Switch, {
     }
 }));
 
-export default function PayaLoadingSwitchButton(props: PayaSwitchButtonPropsType) {
+export default function ReihanLoadingSwitchButton(props: ReihanSwitchButtonPropsType) {
     const { label, isLoading = true, ...restProps } = props;
 
     return (
@@ -51,7 +51,7 @@ export default function PayaLoadingSwitchButton(props: PayaSwitchButtonPropsType
     );
 }
 
-interface PayaSwitchButtonPropsType extends SwitchProps {
+interface ReihanSwitchButtonPropsType extends SwitchProps {
     label?: string;
     isLoading?: boolean;
 }

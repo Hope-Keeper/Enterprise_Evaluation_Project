@@ -4,8 +4,8 @@ import { AxiosErrorPersonalized } from "api";
 import { getCallbackViewData } from "api/KeyClock";
 import { changeRole } from "api/Role";
 import { AxiosResponse } from "axios";
-import PayaAutocompleteHighlight from "components/PayaAutocompleteHighlight";
-import PayaDialog from "components/PayaDialog";
+import ReihanAutocompleteHighlight from "components/ReihanAutocompleteHighlight";
+import ReihanDialog from "components/ReihanDialog";
 import { Form, Formik } from "formik";
 import { enqueueSnackbar } from "notistack";
 import { SyntheticEvent, useEffect, useState } from "react";
@@ -26,16 +26,8 @@ export const roleOption: Option[] = [
         title: "کاربر"
     },
     {
-        id: "1",
-        title: "مدیر سلامت"
-    },
-    {
         id: "2",
-        title: "مدیر اجرایی"
-    },
-    {
-        id: "3",
-        title: "کمیسیون"
+        title: "مدیر "
     },
     {
         id: "4",
@@ -104,7 +96,7 @@ function KeycloackLoginPage() {
 
     return (
         <>
-            <PayaDialog
+            <ReihanDialog
                 keepMounted
                 open={isOpenRoleModal}
                 handleClose={() => {
@@ -149,7 +141,7 @@ function KeycloackLoginPage() {
                                                         lg={12}
                                                         xl={12}>
                                                         <Grid item xs={12} md={5} lg={5} xl={5}>
-                                                            <PayaAutocompleteHighlight
+                                                            <ReihanAutocompleteHighlight
                                                                 value={values.role}
                                                                 onChange={(
                                                                     _e: SyntheticEvent,

@@ -13,45 +13,28 @@ export const userRoleConstructor: (userRoleNumber: string | undefined) => userRo
         case "0":
             return "personnel";
         case "1":
-            return "health_manager";
-        case "2":
-            return "executive_manager";
+            return "manager";
+
         case "3":
-            return "commission";
-        case "4":
-            return "evaluation_manager";
-        case "5":
             return "evaluator";
 
         default:
             undefined;
     }
 };
-type userRolePersianTypes =
-    | "کاربر"
-    | "مدیر سلامت"
-    | "مدیر اجرایی"
-    | "کمیسیون"
-    | "مدیر ارزشیابی"
-    | "ارزیاب"
-    | undefined;
+type userRolePersianTypes = "کاربر" | "مدیر " | "ارزیاب" | undefined;
 
 export const userRolePersianConstructor: (
     userRoleNumber: string | undefined
 ) => userRolePersianTypes = (userRoleNumber) => {
     switch (userRoleNumber) {
         case "0":
-            return "کاربر";
+            return "personnel";
         case "1":
-            return "مدیر سلامت";
-        case "2":
-            return "مدیر اجرایی";
+            return "manager";
+
         case "3":
-            return "کمیسیون";
-        case "4":
-            return "مدیر ارزشیابی";
-        case "5":
-            return "ارزیاب";
+            return "evaluator";
 
         default:
             undefined;

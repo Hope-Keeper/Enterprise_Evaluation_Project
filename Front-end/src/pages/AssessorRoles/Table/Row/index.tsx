@@ -4,8 +4,8 @@ import TableCell from "@mui/material/TableCell";
 import TableRow from "@mui/material/TableRow";
 import { ClipBoardQuestionIcon, FileExcelIcon, PenIcon } from "@share/icons";
 import { RoleType } from "api/Role";
-import PayaSwitchButton from "components/PayaSwitchButton";
-import PayaTooltip from "components/PayaTooltip";
+import ReihanSwitchButton from "components/ReihanSwitchButton";
+import ReihanTooltip from "components/ReihanTooltip";
 import { Dispatch, SetStateAction, useState } from "react";
 
 function RoleTableRow(props: RoleTableRowPropsType) {
@@ -46,7 +46,7 @@ function RoleTableRow(props: RoleTableRowPropsType) {
                     onClick={(e) => {
                         e.stopPropagation();
                     }}>
-                    <PayaSwitchButton
+                    <ReihanSwitchButton
                         disabled={!!editThisRow?.roleId}
                         checked={row.roleIsActive}
                         loading={isLoadingForActivation}
@@ -64,7 +64,7 @@ function RoleTableRow(props: RoleTableRowPropsType) {
             <TableCell align="center">
                 <Box className="d-f-j-c-a-c gap-16" sx={{ p: 0.5 }}>
                     {" "}
-                    <PayaTooltip
+                    <ReihanTooltip
                         title={
                             row.roleTitle === "ورزش و سلامت" ||
                             row.roleTitle === "تشويقات" ||
@@ -99,9 +99,9 @@ function RoleTableRow(props: RoleTableRowPropsType) {
                                 />
                             </IconButton>
                         </span>
-                    </PayaTooltip>
+                    </ReihanTooltip>
                     {row.updatePermission && (
-                        <PayaTooltip title="ویرایش" placement="top">
+                        <ReihanTooltip title="ویرایش" placement="top">
                             <span>
                                 <IconButton
                                     disabled={!!editThisRow?.roleId}
@@ -112,10 +112,10 @@ function RoleTableRow(props: RoleTableRowPropsType) {
                                     <PenIcon />
                                 </IconButton>
                             </span>
-                        </PayaTooltip>
+                        </ReihanTooltip>
                     )}
                     {row.updatePermission && (
-                        <PayaTooltip title="حذف" placement="top">
+                        <ReihanTooltip title="حذف" placement="top">
                             <span>
                                 <IconButton
                                     disabled={!!editThisRow?.roleId}
@@ -126,7 +126,7 @@ function RoleTableRow(props: RoleTableRowPropsType) {
                                     <FileExcelIcon />
                                 </IconButton>
                             </span>
-                        </PayaTooltip>
+                        </ReihanTooltip>
                     )}
                 </Box>
             </TableCell>

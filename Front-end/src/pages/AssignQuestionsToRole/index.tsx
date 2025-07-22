@@ -13,9 +13,9 @@ import { AxiosErrorPersonalized } from "api";
 import { AllOfFamilyType, getAllOfFamilyById } from "api/all";
 import { assignQuestionsToRole, RoleType } from "api/Role";
 import { AxiosResponse } from "axios";
-import PayaAccordion from "components/PayaAccordion";
-import PayaAutocompleteHighlight from "components/PayaAutocompleteHighlight";
-import PayaLoadingButton from "components/PayaLoadingButton";
+import ReihanAccordion from "components/ReihanAccordion";
+import ReihanAutocompleteHighlight from "components/ReihanAutocompleteHighlight";
+import ReihanLoadingButton from "components/ReihanLoadingButton";
 import { enqueueSnackbar } from "notistack";
 import { SyntheticEvent, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
@@ -162,10 +162,10 @@ function AssignQuestionToRole() {
                         </Typography>
                     </Grid>
                     <Grid item xs={10} md={5}>
-                        <PayaAutocompleteHighlight
+                        <ReihanAutocompleteHighlight
                             fullWidth
                             disableClearable
-                            label="خانواده شغلی"
+                            label="گروه شغلی"
                             loading={isLoading}
                             getOptionLabel={(option: Option): string => option.title}
                             onChange={(_e: SyntheticEvent, newValue: Option | null) => {
@@ -199,7 +199,7 @@ function AssignQuestionToRole() {
                                 familyDimensions?.map((item: DimensionType) => {
                                     return (
                                         <Grid item xs={12} key={item.dimensionId}>
-                                            <PayaAccordion
+                                            <ReihanAccordion
                                                 sx={{
                                                     backgroundColor: item.dimensionIsActive
                                                         ? ""
@@ -281,7 +281,7 @@ function AssignQuestionToRole() {
                                                             setAll={setAll}
                                                         />
                                                     </>
-                                                }></PayaAccordion>
+                                                }></ReihanAccordion>
                                         </Grid>
                                     );
                                 })
@@ -350,7 +350,7 @@ function AssignQuestionToRole() {
                                     </Box>
                                 </Grid>
                                 <Grid item xs={12} className="d-f-j-c-a-c" mt={1}>
-                                    <PayaLoadingButton
+                                    <ReihanLoadingButton
                                         size="medium"
                                         color="primary"
                                         variant="contained"
@@ -361,7 +361,7 @@ function AssignQuestionToRole() {
                                         endIcon={<FlappyIcon />}
                                         loadingPosition="end">
                                         ثبت
-                                    </PayaLoadingButton>
+                                    </ReihanLoadingButton>
                                 </Grid>
                                 <Grid item xs={12} className="d-f-j-S-a-c" mt={1}>
                                     {!!pageCount && (

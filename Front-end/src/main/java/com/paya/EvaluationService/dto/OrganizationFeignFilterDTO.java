@@ -1,4 +1,4 @@
-package com.paya.EvaluationService.dto;
+package com.Reihan.EvaluationService.dto;
 
 import lombok.*;
 import lombok.experimental.FieldNameConstants;

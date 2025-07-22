@@ -1,4 +1,4 @@
-package com.paya.EvaluationService.constant;
+package com.Reihan.EvaluationService.constant;
 
 import org.springframework.stereotype.Component;
 

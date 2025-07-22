@@ -7,8 +7,8 @@ import { AxiosErrorPersonalized } from "api";
 import { getAllDimensions, getAllMerits } from "api/all";
 import { copyMeritQuestionsForOterFamily } from "api/Merits";
 import { AxiosResponse } from "axios";
-import PayaAutocompleteHighlight from "components/PayaAutocompleteHighlight";
-import PayaLoadingButton from "components/PayaLoadingButton";
+import ReihanAutocompleteHighlight from "components/ReihanAutocompleteHighlight";
+import ReihanLoadingButton from "components/ReihanLoadingButton";
 import { Form, Formik } from "formik";
 import { enqueueSnackbar } from "notistack";
 import { SyntheticEvent, useEffect, useState } from "react";
@@ -198,42 +198,17 @@ function CopyQuestionForm(props: CopyQuestionFormikPropsType) {
                                         <Grid item xs={12}>
                                             <Divider variant="middle" />
                                         </Grid>
-
-                                        {/* {initialValues.questions &&
-                                        initialValues.questions?.length > 1 &&
-                                        initialValues.questions?.map(
-                                            (item: QuestionSummeryType, index) => {
-                                                const isItemSelected = isSelected(item.questionId);
-                                                const labelId = `enhanced-table-checkbox-${index}`;
-
-                                                return (
-                                                    <Grid item xs={2} className="d-f-j-c-a-c gap-4">
-                                                        <BpCheckbox
-                                                            onClick={(event) =>
-                                                                handleClick(event, item.questionId)
-                                                            }
-                                                            color="primary"
-                                                            checked={isItemSelected}
-                                                            inputProps={{
-                                                                "aria-labelledby": labelId
-                                                            }}
-                                                        />
-                                                        <Typography>{item.questionId}</Typography>
-                                                    </Grid>
-                                                );
-                                            }   )} */}
                                     </Grid>
                                 ) : (
                                     <></>
                                 )}
-
                                 <Grid item xs={12} sm={6} md={3}>
-                                    <PayaAutocompleteHighlight
+                                    <ReihanAutocompleteHighlight
                                         loading={isLoading}
                                         loadingText="درحال بارگیری..."
                                         noOptionsText="موردی یافت نشد"
                                         fullWidth
-                                        label="خانواده شغلی"
+                                        label="گروه شغلی"
                                         getOptionLabel={(option): string => {
                                             return option.title;
                                         }}
@@ -257,7 +232,7 @@ function CopyQuestionForm(props: CopyQuestionFormikPropsType) {
                                 </Grid>
 
                                 <Grid item xs={12} sm={6} md={3}>
-                                    <PayaAutocompleteHighlight
+                                    <ReihanAutocompleteHighlight
                                         loading={isLoading}
                                         loadingText="درحال بارگیری..."
                                         noOptionsText="موردی یافت نشد"
@@ -286,7 +261,7 @@ function CopyQuestionForm(props: CopyQuestionFormikPropsType) {
                                 </Grid>
 
                                 <Grid item xs={12} sm={6} md={3}>
-                                    <PayaAutocompleteHighlight
+                                    <ReihanAutocompleteHighlight
                                         loading={isLoading}
                                         loadingText="درحال بارگیری..."
                                         noOptionsText="موردی یافت نشد"
@@ -315,7 +290,7 @@ function CopyQuestionForm(props: CopyQuestionFormikPropsType) {
                                 </Grid>
 
                                 <Grid item xs={12} sm={6} md={3}>
-                                    <PayaLoadingButton
+                                    <ReihanLoadingButton
                                         fullWidth
                                         disabled={
                                             !values.family ||
@@ -329,8 +304,8 @@ function CopyQuestionForm(props: CopyQuestionFormikPropsType) {
                                         loading={Loading || isLoading || isLodingForCopyQuestion}
                                         type="submit"
                                         endIcon={<CopyIcon />}>
-                                        کپی برای خانواده جدید
-                                    </PayaLoadingButton>
+                                        کپی برای گروه جدید
+                                    </ReihanLoadingButton>
                                 </Grid>
                             </Grid>
                         </Grid>

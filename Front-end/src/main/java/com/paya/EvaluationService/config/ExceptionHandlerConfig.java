@@ -1,4 +1,4 @@
-package com.paya.EvaluationService.config;
+package com.Reihan.EvaluationService.config;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.MessageSource;
@@ -10,7 +10,7 @@ import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import paya.net.exceptionhandler.Config.GlobalExceptionHandler;
+import Reihan.net.exceptionhandler.Config.GlobalExceptionHandler;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

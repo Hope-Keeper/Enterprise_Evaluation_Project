@@ -6,8 +6,8 @@ import { AxiosErrorPersonalized } from "api";
 import { getAllDimensions, getAllMerits } from "api/all";
 import { createNewQuestionForMerit, editQuestionNameById } from "api/Questions";
 import { AxiosResponse } from "axios";
-import PayaAutocompleteHighlight from "components/PayaAutocompleteHighlight";
-import PayaLoadingButton from "components/PayaLoadingButton";
+import ReihanAutocompleteHighlight from "components/ReihanAutocompleteHighlight";
+import ReihanLoadingButton from "components/ReihanLoadingButton";
 import { Form, Formik, FormikState } from "formik";
 import { enqueueSnackbar } from "notistack";
 import { ChangeEvent, Dispatch, SetStateAction, SyntheticEvent, useEffect, useState } from "react";
@@ -241,9 +241,9 @@ function QuestionsForm(props: QuestionsFormikPropsType) {
                 <Form>
                     <Grid container item className="d-f-j-b-a-c" spacing={1}>
                         <Grid item xs={12} sm={6} md={4}>
-                            <PayaAutocompleteHighlight
+                            <ReihanAutocompleteHighlight
                                 fullWidth
-                                label="خانواده شغلی"
+                                label="گروه شغلی"
                                 disabled={!!editThisRow}
                                 getOptionLabel={(option): string => {
                                     return option.title;
@@ -269,7 +269,7 @@ function QuestionsForm(props: QuestionsFormikPropsType) {
                             />
                         </Grid>
                         <Grid item xs={12} sm={6} md={4}>
-                            <PayaAutocompleteHighlight
+                            <ReihanAutocompleteHighlight
                                 fullWidth
                                 label="انتخاب بعد"
                                 disabled={!!editThisRow}
@@ -294,7 +294,7 @@ function QuestionsForm(props: QuestionsFormikPropsType) {
                             />
                         </Grid>
                         <Grid item xs={12} sm={6} md={4}>
-                            <PayaAutocompleteHighlight
+                            <ReihanAutocompleteHighlight
                                 fullWidth
                                 label="انتخاب شایستگی"
                                 disabled={!!editThisRow}
@@ -346,7 +346,7 @@ function QuestionsForm(props: QuestionsFormikPropsType) {
                                 </Grid>
                                 <Grid item xs={12} sm={6} md={3}>
                                     {editThisRow ? (
-                                        <PayaLoadingButton
+                                        <ReihanLoadingButton
                                             fullWidth
                                             endIcon={<FilePlusIcon />}
                                             color="primary"
@@ -355,9 +355,9 @@ function QuestionsForm(props: QuestionsFormikPropsType) {
                                             loading={isLoadingForEditingQuestion}
                                             sx={{ height: "40px" }}>
                                             ثبت ویرایش
-                                        </PayaLoadingButton>
+                                        </ReihanLoadingButton>
                                     ) : (
-                                        <PayaLoadingButton
+                                        <ReihanLoadingButton
                                             fullWidth
                                             endIcon={<FilePlusIcon />}
                                             color="primary"
@@ -366,7 +366,7 @@ function QuestionsForm(props: QuestionsFormikPropsType) {
                                             loading={isLoadingForCreatingQuestion}
                                             sx={{ height: "40px" }}>
                                             ثبت سوال سنجه
-                                        </PayaLoadingButton>
+                                        </ReihanLoadingButton>
                                     )}
                                 </Grid>
                             </Grid>

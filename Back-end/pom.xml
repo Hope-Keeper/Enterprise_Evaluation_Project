@@ -8,7 +8,7 @@
 		<version>3.3.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.paya</groupId>
+	<groupId>com.Reihan</groupId>
 	<artifactId>EvaluationService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>EvaluationService</name>

@@ -10,8 +10,8 @@ import TableRow from "@mui/material/TableRow";
 import { PrinterIcon } from "@share/icons";
 import reportImage from "@share/Images/Report1.png";
 import { PersonnelEvaluationProgramRecordType } from "api/Daigram";
-import PayaButtonWithAddOn from "components/PayaButtonWithAddOn";
-import PayaDialog from "components/PayaDialog";
+import ReihanButtonWithAddOn from "components/ReihanButtonWithAddOn";
+import ReihanDialog from "components/ReihanDialog";
 import Report from "components/Report";
 import Report1 from "components/Report/Report1";
 import { useRef, useState } from "react";
@@ -60,7 +60,7 @@ export default function PersonEvaluationRecordTable(props: PersonEvaluationRecor
                     overflow: "auto"
                 }}>
                 <Table stickyHeader sx={{ minWidth: 750 }} size={dense ? "small" : "medium"}>
-                    <PayaTableHead />
+                    <ReihanTableHead />
                     <TableBody>
                         {rows.map((row, index) => {
                             const {
@@ -148,7 +148,7 @@ export default function PersonEvaluationRecordTable(props: PersonEvaluationRecor
                                         <Box
                                             className="d-f-j-c-a-c gap-8"
                                             sx={{ minWidth: 190, p: 0.5 }}>
-                                            <PayaButtonWithAddOn
+                                            <ReihanButtonWithAddOn
                                                 children="صدور کارنامه"
                                                 options={serviceFileOptions}
                                             />
@@ -162,7 +162,7 @@ export default function PersonEvaluationRecordTable(props: PersonEvaluationRecor
             </TableContainer>
 
             {/**Report 1 dialog */}
-            <PayaDialog
+            <ReihanDialog
                 maxWidth="md"
                 handleClose={() => {
                     setIsReport1Open(false);
@@ -211,7 +211,7 @@ export default function PersonEvaluationRecordTable(props: PersonEvaluationRecor
                 }
             />
 
-            <PayaDialog
+            <ReihanDialog
                 maxWidth="xl"
                 title="کارنامه  ارزشیابی"
                 open={isReport2Open}
@@ -305,7 +305,7 @@ const headCells: readonly HeadCell[] = [
     }
 ];
 
-function PayaTableHead() {
+function ReihanTableHead() {
     return (
         <TableHead>
             <TableRow>

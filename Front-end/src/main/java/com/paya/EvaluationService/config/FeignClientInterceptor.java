@@ -1,4 +1,4 @@
-package com.paya.EvaluationService.config;
+package com.Reihan.EvaluationService.config;
 
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
