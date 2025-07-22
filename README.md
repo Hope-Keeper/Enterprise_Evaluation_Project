@@ -15,25 +15,21 @@
 
 ## 🔧 Tech Stack
 
-| Layer            | Tech                       |
-| ---------------- | -------------------------- |
-| Backend          | - Java                     |
-|                  | - Spring Boot              |
-| Auth             | - Keycloak (OAuth2 / OIDC) |
-| Database         | - MS SQL Server            |
-|                  | - MongoDB                  |
-| Messaging        | - Feign                    |
-|                  | - RabbitMQ                 |
-| Containerization | - Docker                   |
-|                  | - Docker Compose           |
-| Monitoring       | - Spring Boot Actuator     |
-|                  | - Prometheus (optional)    |
-| Frontend         | - React                    |
-|                  | - Vite                     |
-|                  | - Redux                    |
-|                  | - TypeScript               |
-|                  | - Material-UI (MUI)        |
-|                  | - ESLint, Prettier         |
+| Layer            | Tech                                  |
+| ---------------- | ------------------------------------- |
+| Backend          | Java, Spring Boot                     |
+| Auth             | Keycloak (OAuth2 / OIDC)              |
+| Database         | MS SQL Server, MongoDB                |
+| Messaging        | Feign, RabbitMQ                       |
+| Containerization | Docker, Docker Compose                |
+| Monitoring       | Spring Boot Actuator, Prometheus (\*) |
+| ---------------- | ------------------------------------- |
+| Frontend         | - React                               |
+|                  | - Vite                                |
+|                  | - Redux                               |
+|                  | - TypeScript                          |
+|                  | - Material-UI (MUI)                   |
+|                  | - ESLint, Prettier                    |
 
 ---
 
